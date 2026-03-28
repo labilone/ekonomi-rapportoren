@@ -84,7 +84,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("💰 RapportMästaren")
-st.write("Ladda upp din data – vi räknar ut moms, skatt åt dig.")
+st.write("Ladda upp din data – vi räknar ut moms och skatt åt dig.")
 
 with st.expander("Inställningar"):
     company = st.text_input("Företagsnamn", "Mitt Företag AB")
@@ -153,4 +153,4 @@ if uploaded_file:
         st.error(f"Ett fel uppstod: {e}")
 
 st.divider()
-st.caption("Verktyget räknar automatiskt bort 25% moms från din bruttoförsäljning.Inga uppgifter sparas.")
+st.caption("Verktyget räknar automatiskt bort 25% moms från din bruttoförsäljning. Inga uppgifter sparas.")
